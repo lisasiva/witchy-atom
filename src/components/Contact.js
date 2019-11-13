@@ -26,7 +26,7 @@ class Contact extends React.Component {
             <a className="contact__link" href="https://www.linkedin.com/in/lisa-siva/">
               <li><span className="contact__social-icon contact__social-icon--linkedin"></span>LinkedIn</li>
             </a>
-            <a className="contact__link" href="https://github.com/">
+            <a className="contact__link" href="https://github.com/lisasiva">
               <li><span className="contact__social-icon contact__social-icon--github"></span>Github</li>
             </a>
           </ul>
