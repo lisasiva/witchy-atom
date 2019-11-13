@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/witchy-atom/static/css/main.b0d21766.chunk.css",
+    "main.js": "/witchy-atom/static/js/main.e84a96b1.chunk.js",
+    "main.js.map": "/witchy-atom/static/js/main.e84a96b1.chunk.js.map",
+    "runtime-main.js": "/witchy-atom/static/js/runtime-main.fbe8d7d0.js",
+    "runtime-main.js.map": "/witchy-atom/static/js/runtime-main.fbe8d7d0.js.map",
+    "static/js/2.48bf6283.chunk.js": "/witchy-atom/static/js/2.48bf6283.chunk.js",
+    "static/js/2.48bf6283.chunk.js.map": "/witchy-atom/static/js/2.48bf6283.chunk.js.map",
+    "index.html": "/witchy-atom/index.html",
+    "precache-manifest.3af0b937a594edf9f939cefdef6b4ee7.js": "/witchy-atom/precache-manifest.3af0b937a594edf9f939cefdef6b4ee7.js",
+    "service-worker.js": "/witchy-atom/service-worker.js",
+    "static/css/main.b0d21766.chunk.css.map": "/witchy-atom/static/css/main.b0d21766.chunk.css.map",
+    "static/media/About.scss": "/witchy-atom/static/media/icon-wand.f169f948.svg",
+    "static/media/Footer.scss": "/witchy-atom/static/media/icon-crystal-ball.e0d9be77.svg",
+    "static/media/Contact.scss": "/witchy-atom/static/media/social-linkedin-lisa-siva.1e01f0c0.svg",
+    "static/media/Nav.scss": "/witchy-atom/static/media/icon-witch-hat.ff2d9487.svg",
+    "static/media/Projects.scss": "/witchy-atom/static/media/project-personal-website-lisa-siva.e9acf858.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fbe8d7d0.js",
+    "static/js/2.48bf6283.chunk.js",
+    "static/css/main.b0d21766.chunk.css",
+    "static/js/main.e84a96b1.chunk.js"
+  ]
+}
