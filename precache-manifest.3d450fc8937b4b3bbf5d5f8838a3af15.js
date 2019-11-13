@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e1e5dab4d683353ca1e4f99d6c09316",
+    "revision": "f6aba9e5dbab6c2d027ab727b7ab00d9",
     "url": "/index.html"
   },
   {
-    "revision": "8649f1d7c98b3a491863",
-    "url": "/static/css/main.39694a8a.chunk.css"
+    "revision": "d94bc66ecebdd3947cff",
+    "url": "/static/css/main.8bc4555e.chunk.css"
   },
   {
     "revision": "030b1fdf0634124847ab",
     "url": "/static/js/2.48bf6283.chunk.js"
   },
   {
-    "revision": "8649f1d7c98b3a491863",
+    "revision": "d94bc66ecebdd3947cff",
     "url": "/static/js/main.13014a7b.chunk.js"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/runtime-main.a5eaf332.js"
   },
   {
-    "revision": "3c3794a5db5d1ea46a3a96b87af29dec",
-    "url": "/static/media/about-lisa-siva-claudia-goetzelmann.3c3794a5.png"
+    "revision": "b493c541b54faab120848c4106712d55",
+    "url": "/static/media/about-lisa-siva-800x800.b493c541.png"
   },
   {
     "revision": "e0d9be7771db7c279864e9bb966ec174",
