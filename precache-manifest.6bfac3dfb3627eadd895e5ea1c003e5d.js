@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f6aba9e5dbab6c2d027ab727b7ab00d9",
+    "revision": "d5733cbd6e4046fcdb183c09415e7cf1",
     "url": "/index.html"
   },
   {
-    "revision": "d94bc66ecebdd3947cff",
-    "url": "/static/css/main.8bc4555e.chunk.css"
+    "revision": "9ba19797763e3dafd437",
+    "url": "/static/css/main.3541ea2c.chunk.css"
   },
   {
     "revision": "030b1fdf0634124847ab",
     "url": "/static/js/2.48bf6283.chunk.js"
   },
   {
-    "revision": "d94bc66ecebdd3947cff",
+    "revision": "9ba19797763e3dafd437",
     "url": "/static/js/main.13014a7b.chunk.js"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/runtime-main.a5eaf332.js"
   },
   {
-    "revision": "b493c541b54faab120848c4106712d55",
-    "url": "/static/media/about-lisa-siva-800x800.b493c541.png"
+    "revision": "dcd24790d33927ecde6f4613028a0d14",
+    "url": "/static/media/about-ramiah.dcd24790.png"
   },
   {
     "revision": "e0d9be7771db7c279864e9bb966ec174",
