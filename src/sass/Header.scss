@@ -1,0 +1,78 @@
+@import 'base.scss';
+
+.header {
+  height: 65vh;
+  position: relative;
+  padding: 0 var(--padding-side);
+
+  &__content {
+    position: absolute;
+    top: 20%;
+    width: 40%;
+
+    @include for-tablet-large-down {
+      width: 65%;
+    }
+
+    @include for-phone-medium-landscape-down {
+      width: 70%;
+    }
+
+    @include for-phone-medium-down {
+      top: 12%;
+      width: 80%;
+    }
+
+    @include for-phone-long-only {
+      top: 16%;
+    }
+
+  }
+
+  .button--inline {
+    margin-top: 4rem;
+  }
+}
+
+.headline {
+  &--primary {
+    font-weight: 600;
+    letter-spacing: .1rem;
+    font-size: 4.5rem;
+
+    @include for-phone-medium-landscape-down {
+      font-size: 4rem;
+    }
+
+    @include for-phone-medium-down {
+      font-size: 3.5rem;
+    }
+
+    @include for-phone-small-down {
+      font-size: 3rem;
+    }
+  }
+
+  &--gradient{
+    @include text-gradient-pink-purple;
+
+    &:hover {
+      @include text-gradient-purple-pink;
+    }
+  }
+
+  &--secondary {
+    font-weight: 300;
+    font-size: 1.6rem;
+    letter-spacing: .07rem;
+    line-height: 2;
+    margin-top: 3rem;
+    color: var(--color-gray-light-2);
+
+    &.animated {
+      opacity: 0;
+      animation: riseUp .5s 1.3s forwards;
+    }
+
+  }
+}

@@ -1,0 +1,101 @@
+@import './base.scss';
+.contact {
+  padding: 0 var(--padding-side);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include for-phone-small-landscape-down {
+      flex-direction: column;
+    }
+  }
+
+  &__email {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+
+    &--preface {
+      @include text-thin-gray;
+      font-size: 1.8rem;
+    }
+
+    @include for-phone-small-landscape-down {
+      margin-bottom: 4.5rem;
+    }
+
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    @include for-phone-small-landscape-down {
+      flex-direction: row;
+    }
+  }
+
+  &__links li {
+    display: flex;
+    align-items: baseline;
+
+    @include for-phone-small-landscape-down {
+      margin-right: 4rem;
+    }
+  }
+
+  &__social-icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    background: currentColor;
+    background-position: center;
+    overflow: hidden;
+    margin-right: 1.5rem;
+
+    &--linkedin {
+      mask: url(../img/social-linkedin-lisa-siva.svg);
+    }
+
+    &--github {
+      mask: url(../img/social-github-lisa-siva.svg);
+    }
+
+    &--linkedin,
+    &--github {
+      mask-size: cover;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--color-gray-light-4);
+      transition: all .2s;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &:hover,
+    &:active {
+      color: var(--color-purple);
+    }
+  }
+
+  &__icon {
+    height: 10rem;
+    width: 10rem;
+    background: url(../img/icon-crystal.svg);
+    background-size: cover;
+
+    @include for-phone-medium-landscape-down {
+      display: none;
+    }
+  }
+}

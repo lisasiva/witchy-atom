@@ -1,0 +1,139 @@
+/////////////////////////////////////
+// MEDIA QUERIES
+/////////////////////////////////////
+
+// 1100px - iPad Pro-ish
+@mixin for-tablet-large-down {
+  @media (max-width: 68.75em) { @content; }
+}
+
+//1000px - iPad landscape-ish
+@mixin for-tablet-medium-down {
+  @media (max-width: 62.5em) { @content; }
+}
+
+// 900px - iPhoneX landscape-ish
+@mixin for-phone-large-landscape-down {
+  @media (max-width: 56.25em) { @content; }
+}
+
+// 700-900 px - iPhone 6 through X
+@mixin for-phone-large-medium-landscape-only {
+  @media (min-width: 43.75em) and (max-width: 56.25em) { @content; }
+}
+
+// 700px - iPhone 6/7/8 landscape-ish
+@mixin for-phone-medium-landscape-down {
+  @media (max-width: 43.75em) { @content; }
+}
+
+// 600px - iPhone 5 landscape-ish
+@mixin for-phone-small-landscape-down {
+  @media (max-width: 37.5em) { @content; }
+}
+
+//416px - iphone 6/7/8-ish {
+@mixin for-phone-medium-down {
+  @media (max-width: 26em) { @content; }
+}
+
+// 500px wide or less, 800px long or more - iPhone X-ish
+@mixin for-phone-long-only {
+  @media (max-width: 31.25em) and (min-height: 50em) { @content; }
+}
+
+// 360px - Galaxy S5 and iPhone 5
+@mixin for-phone-small-down {
+  @media (max-width: 22.5em) { @content; }
+}
+
+/////////////////////////////////////
+// MIXINS
+/////////////////////////////////////
+
+@mixin text-gradient-pink-purple {
+  background: linear-gradient(to right bottom, var(--color-pink), var(--color-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin text-gradient-purple-pink {
+  background: linear-gradient(to left top, var(--color-pink), var(--color-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin text-thin-gray {
+  letter-spacing: .02em;
+  font-weight: 300;
+  color: var(--color-gray-light-4);
+}
+
+@mixin transition-cubic-bezier {
+  transition: all .3s cubic-bezier(1,0,0,1);
+}
+
+/////////////////////////////////////
+// ANIMATIONS
+/////////////////////////////////////
+
+@keyframes dropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes riseUp {
+  from {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/////////////////////////////////////
+// TYPOGRAPHY
+/////////////////////////////////////
+
+.headline--section {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+
+  &-number {
+    @include text-gradient-purple-pink;
+    font-family: 'Inconsolata', monospace;
+    margin-right: 1rem;
+  }
+}
+
+.headline--dek {
+  letter-spacing: .02em;
+  font-weight: 300;
+  color: var(--color-gray-light-4);
+}
+
+::selection {
+  background: var(--color-purple);
+  color: var(--color-gray-light-1);
+}

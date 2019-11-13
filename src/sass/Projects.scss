@@ -1,0 +1,163 @@
+@import './base.scss';
+
+.projects {
+  padding: 0 var(--padding-side);
+
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    height: 60rem;
+
+    @include for-phone-large-landscape-down {
+      flex-direction: column;
+      height: auto;
+    }
+  }
+
+  & .button--medium {
+    margin-top: 6rem;
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--color-gray-dark-2);
+  transition: all .3s ease-out;
+
+  @include for-phone-large-medium-landscape-only {
+    flex-direction: row;
+  }
+
+  @include for-phone-medium-landscape-down {
+    height: 50rem;
+  }
+
+
+  &:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 15px 5px -10px rgba(23,25,30, 0.5);
+    cursor: pointer;
+
+    @include for-phone-large-medium-landscape-only {
+      transform: translateX(2rem);
+      box-shadow: -10px 10px 5px -5px rgba(23,25,30, 0.5);
+    }
+  }
+
+
+  &:not(:last-child) {
+    margin-right: 4rem;
+
+    @include for-phone-large-landscape-down {
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+
+    @include for-phone-medium-landscape-down {
+      margin-bottom: 6rem;
+    }
+  }
+
+
+
+
+  &--0 &__image-box {
+    background:
+      linear-gradient(to right bottom, rgba(50, 1, 94, .8), rgba(143, 18, 253, .5)),
+      url(../img/project-heyhon.png); //2880 x 1800
+  }
+
+  &--1 &__image-box {
+    background:
+      linear-gradient(to right bottom, rgba(73, 105, 225, .8), rgba(73, 143, 225, .5)),
+      url(../img/project-conway-game-of-life.png);
+  }
+
+  &--2 &__image-box {
+    background:
+      linear-gradient(to right bottom, rgba(33,197,99, .8), rgba(80, 226, 139, .5)),
+      url(../img/project-personal-website-lisa-siva.png);
+  }
+
+
+  &--0 &__image-box,
+  &--1 &__image-box,
+  &--2 &__image-box {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 0 0 30%;
+
+    @include for-phone-large-landscape-down {
+      flex: 0 0 40%;
+    }
+  }
+
+
+  &__content {
+    flex: 1;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+
+    @include for-tablet-large-down {
+      padding: 2rem 2.5rem;
+    }
+
+    @include for-tablet-medium-down {
+      padding: 2rem;
+    }
+
+    @include for-phone-large-landscape-down {
+      padding: 2rem 4rem;
+    }
+  }
+
+  &__title {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
+    letter-spacing: .05em;
+    @include text-gradient-purple-pink;
+
+  }
+
+
+  &__type {
+    font-size: 2.7rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+    padding: 0.5rem 0 2rem 0;
+
+    @include for-tablet-medium-down {
+      padding: 0.5rem 0 1.25rem 0;
+    }
+  }
+
+  &__description {
+    @include text-thin-gray;
+
+    @include for-phone-large-landscape-down {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__stack {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+
+    &--tag {
+      font-weight: 300;
+      font-family: 'Inconsolata', monospace;
+      color: var(--color-gray-dark-0);
+
+      &:not(:last-child) {
+        margin-right: 2.4rem;
+      }
+    }
+  }
+
+}

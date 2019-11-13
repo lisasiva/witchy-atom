@@ -1,0 +1,51 @@
+@import './base.scss';
+
+.footer {
+  padding: 3rem var(--padding-side);
+  background-color: var(--color-gray-dark-2);
+  text-align: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__credits {
+    font-size: 1.4rem;
+    color: var(--color-gray-dark-0);
+  }
+
+  &__credit {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: var(--color-gray-light-3);
+      transition: all .2s;
+    }
+
+    &:hover,
+    &:active {
+      color: var(--color-gray-dark-0);
+    }
+  }
+
+  &__delight {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  &__greeting {
+    @include text-gradient-purple-pink;
+    font-size: 1.8rem;
+  }
+
+  &__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: url(../img/icon-crystal-ball.svg);
+    background-size: cover;
+  }
+}

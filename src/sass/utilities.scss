@@ -1,0 +1,37 @@
+@import './base.scss';
+
+.u-margin-top-smallest {
+  margin-top: 1rem !important;
+}
+
+.u-margin-top-small {
+  margin-top: 2rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem !important;
+}
+
+.u-margin-top-large {
+  margin-top: 6rem !important;
+}
+
+.u-margin-top-largest {
+  margin-top: 20rem !important;
+}
+
+.u-margin-top-section {
+  margin-top: 32rem !important;
+
+  @include for-phone-large-landscape-down {
+    margin-top: 20rem !important;
+  }
+
+  @include for-phone-long-only {
+    margin-top: 16rem !important;
+  }
+}
+
+.u-text-align-center {
+  text-align: center !important;
+}

@@ -1,0 +1,164 @@
+@import 'base.scss';
+
+.navigation {
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-top) var(--padding-side) 0 var(--padding-side);
+
+
+  &__logo {
+    @include transition-cubic-bezier;
+    background-image: url(../img/icon-witch-hat.svg);
+    height: 6rem;
+    width: 6rem;
+    background-size: cover;
+    z-index: 15;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+
+    @include for-phone-medium-landscape-down {
+      display: none;
+    }
+  }
+
+  &__list-item {
+    font-family: 'Inconsolata', monospace;
+
+    &:not(:last-child) {
+      margin-right: 3.5rem;
+    }
+
+  }
+
+  &__number {
+    @include text-gradient-purple-pink;
+    font-weight: 700;
+    margin-right: 1rem;
+  }
+
+  &__link {
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: var(--color-gray-light-4);
+      transition: all .2s;
+    }
+
+    &:hover,
+    &:active {
+      color: var(--color-purple);
+    }
+  }
+
+}
+
+///////////////////////////////
+// FOR MOBILE NAVIGATION
+///////////////////////////////
+
+.nav__button {
+  display: none;
+
+  @include for-phone-medium-landscape-down {
+    display: block;
+    cursor: pointer;
+    z-index: 15;
+  }
+
+  .button__icon {
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2.5px;
+      background-color: var(--color-purple);
+      border-radius: 10px;
+      transition: all .2s;
+    }
+
+    & {
+      position: relative;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+
+    &::after {
+      top: 1rem;
+    }
+  }
+
+}
+
+.mobile-nav__overlay {
+  @include transition-cubic-bezier;
+  width: 0vw;
+  background-color: var(--color-gray-dark-2);
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+}
+
+.navigation--mobile {
+  // Animates hamburger icon
+  .nav .nav__button {
+    .button__icon {
+      background-color: transparent;
+
+      &::before {
+        top: 0;
+        transform: rotate(135deg);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotate(-135deg);
+      }
+    }
+  }
+
+  // Expands mobile navigation overlay
+  .mobile-nav__overlay {
+    width: 65vw;
+  }
+
+  // Styles nav links
+  .mobile-nav__overlay .nav__list {
+    flex-direction: column;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+
+    & .nav__list-item {
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+}
