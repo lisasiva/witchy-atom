@@ -12,7 +12,7 @@ class Projects extends React.Component {
       projects: [
         {id: 0, url: 'https://github.com/lisasiva/snooze-it', style: 'project--0', type: 'Mobile web app', title: 'HeyHon', description:`HeyHon is a serverless CRUD app, built with AWS. Think of it like an issue queue for couples: You can create an account and save important discussions for later. `, stack: ['JS', 'AWS Lambda', 'DynamoDB']},
         {id: 1, url: 'https://github.com/lisasiva/conway-game-of-life', style: 'project--1', type: 'Game interface', title: 'Game of Life', description: `This is the interface I designed to run a simple version of Conway's Game of Life. The game board, which can be resized, was built with CSS grid.`, stack: ['JS', 'SCSS', 'CSS Grid']},
-        {id: 2, url: 'https://github.com/lisasiva/lisasiva.github.io', style: 'project--2', type: 'Personal website', title: 'lisasiva.com', description: 'For this first iteration of my personal website, I kept the layout minimal, with plenty of white space. My primary goal was to get comfortable with flexbox.', stack: ['JS', 'SCSS', 'Flexbox']}
+        {id: 2, url: 'https://github.com/lisasiva/personal-website-v1/', style: 'project--2', type: 'Personal website', title: 'lisasiva.com', description: 'For this first iteration of my personal website, I kept the layout minimal, with plenty of white space. My primary goal was to get comfortable with flexbox.', stack: ['JS', 'SCSS', 'Flexbox']}
       ]
     }
   }
