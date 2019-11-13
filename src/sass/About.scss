@@ -50,7 +50,9 @@
     width: var(--size-about-photo);
     height: var(--size-about-photo);
     border-radius: 5px;
-    background-image: url(../img/about-ramiah.png);
+    background:
+      linear-gradient(to right bottom, rgba(50, 1, 94, .8), rgba(143, 18, 253, .5)),
+      url(../img/project-heyhon.png);
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 50%;
