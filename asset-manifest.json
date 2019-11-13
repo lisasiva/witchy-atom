@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf6b92b2.chunk.css",
+    "main.css": "/static/css/main.c119f532.chunk.css",
     "main.js": "/static/js/main.13014a7b.chunk.js",
     "main.js.map": "/static/js/main.13014a7b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a5eaf332.js",
@@ -8,9 +8,9 @@
     "static/js/2.48bf6283.chunk.js": "/static/js/2.48bf6283.chunk.js",
     "static/js/2.48bf6283.chunk.js.map": "/static/js/2.48bf6283.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.83a4f1be20dc953cf769e4b2aff5093f.js": "/precache-manifest.83a4f1be20dc953cf769e4b2aff5093f.js",
+    "precache-manifest.3321c86ccede95e8a6bea47728e67641.js": "/precache-manifest.3321c86ccede95e8a6bea47728e67641.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.bf6b92b2.chunk.css.map": "/static/css/main.bf6b92b2.chunk.css.map",
+    "static/css/main.c119f532.chunk.css.map": "/static/css/main.c119f532.chunk.css.map",
     "static/media/About.scss": "/static/media/icon-wand.f169f948.svg",
     "static/media/Footer.scss": "/static/media/icon-crystal-ball.e0d9be77.svg",
     "static/media/Contact.scss": "/static/media/social-linkedin-lisa-siva.1e01f0c0.svg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.a5eaf332.js",
     "static/js/2.48bf6283.chunk.js",
-    "static/css/main.bf6b92b2.chunk.css",
+    "static/css/main.c119f532.chunk.css",
     "static/js/main.13014a7b.chunk.js"
   ]
 }
